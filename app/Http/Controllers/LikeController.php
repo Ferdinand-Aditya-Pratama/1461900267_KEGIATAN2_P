@@ -14,8 +14,8 @@ class LikeController extends Controller
      */
     public function index()
     {
-        $like = Anggota::where('anggota_nama', 'like', 'Ade');
-        return view('tampilanLI0267', ['anggota' => $like]);
+        $like = Anggota::where('anggota_nama', 'Like', 'Ade')->get();
+        return view('tampilanLI0267', ['likedata' => $like]);
     }
 
     /**

@@ -34,7 +34,7 @@
         <a href="/like1">Select Join Like</a>
     </nav>
 
-    <h1 style="text-align: center;">Select Join</h1>
+    <h1 style="text-align: center;">Select Join Like</h1>
 
     <hr>
         
@@ -48,11 +48,11 @@
             </thead>
             <tbody>
                 <?php $no=1; ?>
-                @foreach ($buku as $bu)
+                @foreach ($selikedata as $sl)
                     <tr>
-                        <td>{{$bu->buku_judul}}</td>
-                        <td>{{$bu->kategori_nama}}</td>
-                        <td>{{$bu->buku_deskripsi}}</td>
+                        <td>{{$sl->buku_judul}}</td>
+                        <td>{{$sl->kategori_nama}}</td>
+                        <td>{{$sl->buku_deskripsi}}</td>
                     </tr>
 
                 @endforeach

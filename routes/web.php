@@ -3,6 +3,7 @@
 use App\Http\Controllers\BukuController;
 use App\Http\Controllers\AnggotaController;
 use App\Http\Controllers\LikeController;
+use App\Http\Controllers\SelectLikeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,3 +24,4 @@ Route::get('/', function () {
 Route::resource('anggota', AnggotaController::class);
 Route::resource('buku', BukuController::class);
 Route::resource('like', LikeController::class);
+Route::resource('like1', SelectLikeController::class);

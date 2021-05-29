@@ -31,10 +31,10 @@
         <a href="/anggota">Select</a> |
         <a href="/like">Select Like</a> |
         <a href="/buku">Select Join</a> |
-        <a href="#">Select Join Like</a>
+        <a href="like1">Select Join Like</a>
     </nav>
 
-    <h1 style="text-align: center;">Welcome to the Home Page</h1>
+    <h1 style="text-align: center;">Like</h1>
 
     <hr>
         
@@ -50,7 +50,7 @@
             </thead>
             <tbody>
                 <?php $no=1; ?>
-                @foreach ($like as $li)
+                @foreach ($likedata as $li)
                     <tr>
                     <td>{{$no++}}</td>
                         <td>{{$li->anggota_nama}}</td>
