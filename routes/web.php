@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\BukuController;
+use App\Http\Controllers\AnggotaController;
+use App\Http\Controllers\LikeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('anggota', AnggotaController::class);
+Route::resource('buku', BukuController::class);
+Route::resource('like', LikeController::class);
