@@ -31,7 +31,7 @@
         <a href="/anggota">Select</a> |
         <a href="/like">Select Like</a> |
         <a href="/buku">Select Join</a> |
-        <a href="like1">Select Join Like</a>
+        <a href="/like1">Select Join Like</a>
     </nav>
 
     <h1 style="text-align: center;">Like</h1>
